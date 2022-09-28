@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocoball's Portfolio</title>
+
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg-xml" />
+
+    <!-- 🔗 CSS样式 -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 🏙 PRELOAD IMAGES -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.webp" />
+  </head>
+  <body>
+    <!-- 😺 HEADER -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">Chocoball</a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>主页</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="navbar-link" data-nav-link>作品</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link" data-nav-link>介绍</a>
+            </li>
+
+            <li>
+              <a href="#timeline" class="navbar-link" data-nav-link>经历</a>
+            </li>
+
+            <li>
+              <a href="#community" class="navbar-link" data-nav-link>社区</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>联系</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-toggle-btn" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 🎁 main -->
+    <main>
+      <article>
+        <!-- 😎 HERO -->
+        <section class="section hero" id="home">
+          <div class="container">
+            <figure
+              class="hero-banner img-holder has-before"
+              style="--width: 640; --height: 840"
+            >
+              <img
+                src="./assets/images/hero-banner.gif"
+                width="640"
+                height="840"
+                alt=""
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="hero-content">
+              <p class="section-subtitle">UI/UX Designer</p>
+
+              <h1 class="h1 hero-title">嗨✋，我是许墨</h1>
+
+              <ul class="hero-list">
+                <li>
+                  <a href="#" class="list-link">
+                    <span class="span">热爱自己的工作</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="list-link">
+                    <span class="span">更加擅长交互设计</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="list-link">
+                    <span class="span">会一点点 Coding</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="exp-list">
+                <li class="list-item">
+                  <strong class="strong">4+</strong>
+                  <span class="span">工作经验<br />Experience</span>
+                </li>
+
+                <li class="list-item">
+                  <strong class="strong">10+</strong>
+                  <span class="span">服务客户<br />Customers</span>
+                </li>
+              </ul>
+
+              <a href="#portfolio" class="slide-down-btn">
+                <ion-icon name="arrow-down"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 📚 PORTFOLIO -->
+        <section class="section portfolio" id="portfolio">
+          <div class="container">
+            <p class="section-subtitle">Portfolio</p>
+
+            <h2 class="h2 section-title">一些些作品</h2>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="card show-modal-1th">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-1.webp"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a class="card-content">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    <h3 class="h3 card-title">地产之眼</h3>
+                    <p class="card-text">基于卫星数据土地研判产品</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item show-modal-2th">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-2.webp"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a class="card-content">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    <h3 class="h3 card-title">园区之眼</h3>
+                    <p class="card-text">基于卫星数据产业园区大屏</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item show-modal-3th">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-3.webp"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a class="card-content">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    <h3 class="h3 card-title">BYDLINK</h3>
+                    <p class="card-text">站酷比亚迪车机参赛作品</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item show-modal-4th">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-4.webp"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a class="card-content">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    <h3 class="h3 card-title">HIFIVE官网</h3>
+                    <p class="card-text">Web官网改版</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item show-modal-5th">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-5.webp"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a class="card-content">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    <h3 class="h3 card-title">BGM识别助手</h3>
+                    <p class="card-text">曲多多官网功能</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item show-modal-6th">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-6.webp"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a class="card-content">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    <h3 class="h3 card-title">地产之眼APP</h3>
+                    <p class="card-text">Web端功能的延展产品</p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 🍳 SKILLS -->
+        <section
+          class="section skills has-before"
+          style="background-image: url(./assets/images/skills-bg.png)"
+          id="skills"
+        >
+          <div class="container">
+            <div class="skills-content">
+              <p class="section-subtitle">Introduction</p>
+              <h2 class="h2 section-title">详细介绍</h2>
+              <p class="section-text">
+                热爱自己的工作, 有足够的驱动力和好奇心探索相关知识<br />
+                尊重设计是解决问题的, 而不是愉悦眼球的,
+                因此更愿称自己为产品设计师<br />
+                同时认为自己工作是个承上启下, 消除产品和程序员信息差的重要环节,
+                所以我习惯了向上思考需求的合理性, 同时向下会一点coding
+              </p>
+              <ul class="skills-list">
+                <li class="skills-item">
+                  <div class="wrapper">
+                    <h3 class="skill-title">Web</h3>
+                    <data class="skill-value" value="60%">60%</data>
+                  </div>
+                  <div class="progress-box">
+                    <div class="progress" style="width: 60%"></div>
+                  </div>
+                </li>
+
+                <li class="skills-item">
+                  <div class="wrapper">
+                    <h3 class="skill-title">App</h3>
+                    <data class="skill-value" value="30%">30%</data>
+                  </div>
+                  <div class="progress-box">
+                    <div class="progress" style="width: 30%"></div>
+                  </div>
+                </li>
+
+                <li class="skills-item">
+                  <div class="wrapper">
+                    <h3 class="skill-title">Other</h3>
+                    <data class="skill-value" value="10%">10%</data>
+                  </div>
+                  <div class="progress-box">
+                    <div class="progress" style="width: 10%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skills-banner has-before"></div>
+          </div>
+        </section>
+
+        <!-- ⏱ TIMELINE -->
+        <section class="section timeline" id="timeline">
+          <div class="container">
+            <p class="section-subtitle">Work Experience</p>
+            <h2 class="section-title">工作经历</h2>
+            <ul class="timeline-list">
+              <li class="timeline-item">
+                <h3 class="item-period">2021 - 至今</h3>
+                <a
+                  href="https://www.dragonest.com"
+                  target="_blank"
+                  class="item-company"
+                  >成都龙渊网络科技有限公司</a
+                >
+                <p class="item-title">UI/UX设计师</p>
+              </li>
+
+              <li class="timeline-item">
+                <h3 class="item-period">2019 - 2021</h3>
+                <a
+                  href="https://www.adaspace.com"
+                  target="_blank"
+                  class="item-company"
+                  >成都国星宇航科技有限公司</a
+                >
+                <p class="item-title">UI/UX设计师</p>
+              </li>
+
+              <li class="timeline-item">
+                <h3 class="item-period">2018 - 2019</h3>
+                <a
+                  href="https://www.baicizhan.com"
+                  target="_blank"
+                  class="item-company"
+                  >成都超有爱科技有限公司</a
+                >
+                <p class="item-title">动效设计</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 🏡 COMMUNITY -->
+        <section class="section portfolio" id="community">
+          <div class="container">
+            <p class="section-subtitle">Community</p>
+
+            <h2 class="h2 section-title">社区平台</h2>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/behance.webp"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a
+                    href="https://www.behance.net/Chocoball"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    <h3 class="h3 card-title">Behance</h3>
+                    <!-- <p class="card-text">描述信息</p> -->
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/dribbble.webp"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a
+                    href="https://dribbble.com/Chocoball"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    <h3 class="h3 card-title">Dribbble</h3>
+                    <!-- <p class="card-text">描述信息</p> -->
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/figma.webp"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a
+                    href="figma.com/@Chocoball"
+                    target="_blank"
+                    class="card-content"
+                  >
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    <h3 class="h3 card-title">Figma</h3>
+                    <!-- <p class="card-text">描述信息</p> -->
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 📇 CONTACT -->
+        <section class="section contact" id="contact">
+          <div class="container">
+            <div class="contact-content">
+              <p class="section-subtitle">Contact</p>
+              <h2 class="h2 section-title">联系我吧</h2>
+
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <address class="contact-link">成都市骑龙地铁站附近</address>
+                </li>
+
+                <li class="contact-item">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <a href="tel: +86 132 8186 6960" class="contact-link"
+                    >+86 132 8186 6960</a
+                  >
+                </li>
+
+                <li class="contact-item">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <a href="tel: Cchocoball@outlook.com" class="contact-link"
+                    >Cchocoball@outlook.com</a
+                  >
+                </li>
+
+                <li class="contact-item">
+                  <ion-icon name="globe-outline"></ion-icon>
+                  <a href="https://chocoball.design" class="contact-link"
+                    >Chocoball.design</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-banner has-before"></div>
+          </div>
+        </section>
+
+        <!-- 🦶 FOOTER -->
+        <footer class="footer">
+          <div class="container">
+            <p class="copyright">
+              &copy; 2022 All rights reserved by
+              <a href="#" class="copyright-link">Chocoball</a>
+            </p>
+
+            <ul class="social-media-list">
+              <li>
+                <a
+                  href="https://www.behance.net/Chocoball"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <ion-icon name="logo-behance"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://dribbble.com/Chocoball"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <ion-icon name="logo-dribbble"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.figma.com/@Chocoball"
+                  target="_blank"
+                  class="social-media-link"
+                >
+                  <ion-icon name="logo-figma"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </article>
+    </main>
+
+    <!-- 🎆 PORTOFOLIO MODAL -->
+
+    <div class="modal modal-1th" id="modal">
+      <div class="show">
+        <img class="portfolio-show" src="./assets/images/1th/1.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/2.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/3.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/4.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/5.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/6.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/7.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/8.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/9.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/10.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/11.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/12.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/13.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/14.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/15.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/16.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/17.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/18.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/19.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/20.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/21.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/22.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/23.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/24.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/25.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/26.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/27.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/1th/28.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="modal modal-2th">
+      <div class="show">
+        <img class="portfolio-show" src="./assets/images/2th/1.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="modal modal-3th">
+      <div class="show">
+        <img class="portfolio-show" src="./assets/images/3th/1.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/2.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/3.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/4.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/5.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/6.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/7.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/8.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/9.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/10.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/12.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/13.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/14.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/15.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/16.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/3th/17.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="modal modal-4th">
+      <div class="show">
+        <img class="portfolio-show" src="./assets/images/4th/1.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/4th/2.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/4th/3.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/4th/4.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/4th/5.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/4th/6.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/4th/7.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/4th/8.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/4th/10.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/4th/11.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="modal modal-5th">
+      <div class="show">
+        <img class="portfolio-show" src="./assets/images/5th/1.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/2.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/3.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/4.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/5.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/6.gif" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/7.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/8.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/9.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/10.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/11.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/5th/12.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="modal modal-6th">
+      <div class="show">
+        <img class="portfolio-show" src="./assets/images/6th/1.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/2.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/3.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/4.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/5.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/6.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/7.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/8.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/9.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/10.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/11.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/12.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/13.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/14.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/15.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/16.webp" alt="" />
+        <img class="portfolio-show" src="./assets/images/6th/17.webp" alt="" />
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- 🔗 JS链接 -->
+    <script src="./assets/js/scripts.js" defer></script>
+
+    <!-- 🔗 ionicon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
